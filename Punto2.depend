@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1416339637 source:d:\dropbox\udea(dropbox)\informatica ii\villa 2014\lab(lennis)\informaticaii\practica3\punto2\polinomyal.cpp
+	"Polinomyal.h"
+	<iostream>
+	<math.h>
+	<complex>
+
+1416338084 d:\dropbox\udea(dropbox)\informatica ii\villa 2014\lab(lennis)\informaticaii\practica3\punto2\polinomyal.h
+	<iostream>
+	<complex>
+
