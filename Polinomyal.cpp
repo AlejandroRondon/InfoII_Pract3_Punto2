@@ -37,7 +37,7 @@ Polinomyal::Polinomyal(const Polinomyal& mypoly){
    // std::cout << "consP2Copy(x)="<<poly[0] <<"X^2+"<<poly[1]<<"X+"<<poly[2]<<endl;
 }
 
-void Polinomyal::operator =(Polinomyal mypoly){
+void Polinomyal::operator =(const Polinomyal& mypoly){
 
     int i;
     this->grade = mypoly.grade;
@@ -45,7 +45,6 @@ void Polinomyal::operator =(Polinomyal mypoly){
     for(i=0;i<=grade;i++){
         poly[i]= mypoly.poly[i];
     }
-
 }
 float Polinomyal::Eval(float x){
     int i;
@@ -82,7 +81,7 @@ void Polinomyal::getRoots(complex<float>* temp){
 
 
 }
-ostream& operator <<(ostream &o,Polinomyal mypoly)
+ostream& operator <<(ostream &o,const Polinomyal& mypoly)
 {
     if(mypoly.grade == 2){
             o  << "P(x)=" << mypoly.poly[0] << "X^2+" << mypoly.poly[1] << "X+" <<mypoly.poly[2];

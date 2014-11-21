@@ -16,10 +16,10 @@ class Polinomyal
         Polinomyal(const Polinomyal&);
         Polinomyal(float ,float );
         Polinomyal(float ,float ,float );
-        friend ostream& operator <<(ostream &o,const Polinomyal mypoly);    //friend: With this WORD this method will can to access to the private attributes
+        friend ostream& operator <<(ostream &o,const Polinomyal& mypoly);    //friend: With this WORD this method will can to access to the private attributes
         float Eval(float);
         void getRoots(complex<float>*);
-        void operator =(Polinomyal);
+        void  operator =(const Polinomyal&);
         int Getgrade();
         void Setgrade(int);
 
